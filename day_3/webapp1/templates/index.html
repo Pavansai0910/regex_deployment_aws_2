@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex-Clone</title>
+</head>
+<body style="color: black; text-align: center;">
+    <div class="container" style="height: 700px; width: 100%; background-color: rgb(183, 244, 244); background-size: cover;">
+    <h1 style="color: black; text-align: center; padding-top: 50px;">regex</h1>
+   <center> <form action="" method="POST">
+        <label style="padding-right: 15px; font-weight: bolder; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black;">Regular Expression</label>
+        <input type="text" name="in_1" placeholder="RegEX"><br><br>
+        <label style="padding-right: 15px; font-weight: bolder; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black;">Test String</label>
+        <textarea rows="6" cols="30" name="in_2" placeholder="Enter Test String"></textarea><br><br>
+        <button style="height: 25px; width: 80px; border-radius: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; justify-content: center; margin-bottom: 20px; color: black; font-weight: bolder;">Submit</button>
+    </form></center>
+    
+    {% if match|length %}
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black; text-align: center;">Match Found</h2>
+        <b>
+        Total no of matches in given string is:{{result}} <br><br>
+        match:{{match}} <br><br>
+        </b>
+    {% else %}
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black; text-align: center">Match Not Found</h2>
+    {% endif %}
+</div>
+</body>
+</html>
+
